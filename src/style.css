@@ -8,3 +8,7 @@
   -ms-overflow-style: none; /* Internet Explorer et Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.scroll-bar {
+  transition: transform 0.2s ease-out;
+}
