@@ -10,11 +10,15 @@
     class="w-screen bg-gradient-to-br from-gray-400 via-white to-white h-screen flex flex-col gap-[1px] overflow-hidden"
   >
     <div
-      class="container-el z-20 fixed bg-white dark:bg-black self-center p-6 w-sm h-[400px] border-[1px] border-black dark:border-gray-400 rounded-4xl top-60 overflow-scroll"
+      class="scroll-piste z-20 h-[384px] w-5 overflow-hidden fixed top-64 transition-all"
     >
       <div
-        class="scroll-bar transition-all duration-75 right-2 absolute h-20 w-2 bg-orange-500 rounded-full"
+        class="scroll-bar will-change-transform right-2 absolute h-20 w-2 bg-orange-500 rounded-full"
       ></div>
+    </div>
+    <div
+      class="container-el z-10 fixed bg-white dark:bg-black self-center p-6 w-sm h-[400px] border-[1px] border-black dark:border-gray-400 rounded-4xl top-60 overflow-scroll no-scrollbar"
+    >
       <h1 class="text-2xl">023: curved scroller.</h1>
       <p class="text-xl text-gray-800 mb-10">Aboubakar Jay.</p>
       <img src="/public/image1.jpg" alt="animal" class="rounded-sm" />
@@ -80,6 +84,14 @@
         <p class="text-gray-700 text-xl">AboubakarJay ©</p>
       </footer>
     </div>
+
+    <canvas
+      id="gameCanvas"
+      width="500"
+      height="500"
+      class="absolute z-30 border-2"
+    ></canvas>
+
     <script src="script.js"></script>
   </body>
 </html>
